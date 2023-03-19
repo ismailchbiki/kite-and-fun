@@ -6,6 +6,7 @@
 
   .logo-image {
     @include logo-image;
+    // max-width: 60px;
   }
 
   .logo-text {

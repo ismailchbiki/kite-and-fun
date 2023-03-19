@@ -2,9 +2,11 @@
 @import "./../../Sass/mixins";
 
 .main-header {
-  background-color: $background-color;
+  // background-color: $background-color;
   position: relative;
   min-height: 600px;
+  background-image: url("../../assets/Images/banner-1920-1000.jpg");
+  background-size: cover;
 
   // Header Inner Used For Grid
   .header-inner {
