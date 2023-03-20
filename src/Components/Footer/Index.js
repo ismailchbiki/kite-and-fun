@@ -49,7 +49,7 @@ const Footer = () => {
 
       {success && (
         <div className="container">
-          <FooterHeader header={header} />
+          {/* <FooterHeader header={header} /> */}
           <FooterLinks content={content} />
           <FooterFooter copyRight={copyRight} />
         </div>
