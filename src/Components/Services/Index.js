@@ -26,7 +26,7 @@ const Services = () => {
 
   // Fetch data
   const {
-    data: { header = {}, content = [] },
+    data: { content = [] },
     success,
     isPending,
     error,
@@ -35,21 +35,13 @@ const Services = () => {
   return (
     <section
       className="services"
-      style={
-        darkTheme
-          ? success
-            ? servicesBgDark
-            : null
-          : success
-          ? servicesBg
-          : null
-      }
+      style={darkTheme ? servicesBgDark : servicesBg}
     >
       {isPending && <Loading />}
 
       {success && (
         <div className="container">
-          <ServicesHeader header={header} />
+          <ServicesHeader />
           <ServicesBody content={content} />
         </div>
       )}

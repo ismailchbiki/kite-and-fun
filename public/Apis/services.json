@@ -1,37 +1,25 @@
 {
-  "header": {
-    "title": "Our Services",
-    "body": "Learn how we helped our several clients grow in online business. It will give you an idea of our capabilities."
-  },
-
   "content": [
     {
       "id": 1,
-      "title": "App Development",
-      "image": "./Images/Services/img-1.svg",
-      "image_dark": "./Images/Services/img-1-dark.svg",
-      "body": "We design and build iOS, Android or hybrid apps using react native and flutter or cordova"
+      "title": "Kitesurf & Watersports",
+      "image": "./Images/Services/kitesurf.png",
+      "image_dark": "./Images/Services/kitesurf-black-bg.png",
+      "body": "Discover kitesurfing and the other watersports you can practice in Morocco."
     },
     {
       "id": 2,
-      "title": "Web Design",
-      "image": "./Images/Services/img-2.svg",
-      "image_dark": "./Images/Services/img-2-dark.svg",
-      "body": "We design and build iOS, Android or hybrid apps using react native and flutter or cordova"
+      "title": "Stuff You Can Do",
+      "image": "./Images/Services/discover.png",
+      "image_dark": "./Images/Services/discover.png",
+      "body": "Explore the different activities you can do out of the water."
     },
     {
       "id": 3,
-      "title": "Social Media",
-      "image": "./Images/Services/img-3.svg",
-      "image_dark": "./Images/Services/img-3-dark.svg",
-      "body": "How you present your brand is important. We make that process easy for you"
-    },
-    {
-      "id": 4,
-      "title": "Logo & Branding",
-      "image": "./Images/Services/img-4.svg",
-      "image_dark": "./Images/Services/img-4-dark.svg",
-      "body": "We craft exquisite brand identities that convey your product and service well to your clients"
+      "title": "Tips & Tricks",
+      "image": "./Images/Services/tips-and-tricks.png",
+      "image_dark": "./Images/Services/tips-and-tricks.png",
+      "body": "Very useful tips and tricks you should know about Morocco."
     }
   ]
 }

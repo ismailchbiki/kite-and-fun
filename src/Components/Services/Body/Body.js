@@ -9,7 +9,6 @@ import "./Body.scss";
 
 // Services Container Component
 const ServicesBody = ({ content }) => {
-  // Custome Hooks
   const darkTheme = useDarkTheme();
   const { preventRouterLinks } = usePreventRouterLinks(
     `${process.env.PUBLIC_URL}/services`
@@ -19,12 +18,12 @@ const ServicesBody = ({ content }) => {
   const servicesList = content.map((serv) => {
     return (
       <div key={serv.id} className="services-card">
-        <Link
+        {/* <Link
           to={`${process.env.PUBLIC_URL}/services`}
           onClick={preventRouterLinks}
           className="services-link"
           aria-label="Service Link"
-        ></Link>
+        ></Link> */}
 
         <h3 className="card-title">{serv.title}</h3>
         <div className="card-img">
