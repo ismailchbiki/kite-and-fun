@@ -74,14 +74,16 @@ body {
   padding-left: 1rem;
 
   @media (min-width: $minXXLargeScreens) {
-    width: 1370px;
+    // width: 1370px;
+    width: 90%;
   }
 
   @media (max-width: $maxXLargeScreens) {
-    width: 1170px;
+    // width: 1170px;
+    width: 90%;
   }
 
   @media (max-width: $maxLargeScreens) {
-    width: 100%;
+    width: 90%;
   }
 }

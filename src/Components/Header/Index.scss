@@ -10,14 +10,12 @@
   // Header Inner Used For Grid
   .header-inner {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
     gap: 50px;
     align-items: center;
     min-height: 700px;
 
     @media (min-width: $minLargeScreens) {
       height: 100vh;
-      max-height: 700px;
     }
 
     @media (max-width: $maxMediumScreens) {
@@ -37,9 +35,10 @@
       }
 
       .header-title {
-        color: $third-color;
-        font-size: 3.5rem;
-        font-weight: normal;
+        color: $white-color;
+        font-size: 8vh;
+        font-weight: bold;
+        // text-align: center;
 
         @media (max-width: $maxLargeScreens) {
           font-size: 2.7rem;
@@ -73,19 +72,6 @@
 
         &:hover {
           transform: translateX(7px);
-        }
-      }
-    }
-
-    .header-image {
-      img {
-        display: block;
-        width: 100%;
-        user-select: none;
-
-        @media (max-width: $maxSmallScreens) {
-          width: 90%;
-          margin: auto;
         }
       }
     }
