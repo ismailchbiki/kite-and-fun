@@ -16,7 +16,7 @@ import "./Index.scss";
 const About = () => {
   // Fetch data
   const {
-    data: { header = {}, content = {} },
+    data: { content = {} },
     success,
     isPending,
     error,
@@ -28,7 +28,7 @@ const About = () => {
 
       {success && (
         <div className="container">
-          <AboutHeader header={header} />
+          <AboutHeader />
           <AboutBody content={content} />
         </div>
       )}
