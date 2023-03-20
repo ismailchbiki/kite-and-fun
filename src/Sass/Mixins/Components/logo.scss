@@ -18,7 +18,23 @@
 // Logo Text Mixin
 @mixin logo-text {
   @include first-header;
-  font-size: 2rem;
+  font-size: 30px;
   color: $third-color;
   user-select: none;
+  font-weight: normal;
+  font-weight: bold;
+  font-family: "Poppins", sans-serif;
+  font-style: italic;
+
+  @media (max-width: $maxLargeScreens) {
+    font-size: 30px;
+  }
+
+  @media (max-width: $maxXSmallScreens) {
+    font-size: 22px;
+  }
+
+  span {
+    color: $main-color;
+  }
 }

@@ -9,15 +9,9 @@ import "./Footer.scss";
 
 // Footer Footer Component
 const FooterFooter = ({ copyRight }) => {
-  // Custome Hooks
   const { preventRouterLinks } = usePreventRouterLinks(
     `${process.env.PUBLIC_URL}/`
   );
-
-  // Fetch Logo
-  const {
-    data: { image = "", text = "" },
-  } = useAxios("./Apis/logo.json", []);
 
   // Fetch Social
   const { data: social = [] } = useAxios("./Apis/social.json", []);
@@ -44,16 +38,9 @@ const FooterFooter = ({ copyRight }) => {
         onClick={preventRouterLinks}
         className="logo"
       >
-        {image && (
-          <img
-            src={image}
-            alt="Logo"
-            draggable="false"
-            className="logo-image"
-          />
-        )}
-
-        {text && <span className="logo-text">{text}</span>}
+        <div className="logo-text">
+          Kite <span>& Fun</span>
+        </div>
       </Link>
 
       <p className="copy-right">{copyRight}</p>

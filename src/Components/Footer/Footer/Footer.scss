@@ -25,7 +25,7 @@
 
     .logo-text {
       @include logo-text;
-      color: #fff;
+      color: #fff; // Footer background is black
     }
   }
 
