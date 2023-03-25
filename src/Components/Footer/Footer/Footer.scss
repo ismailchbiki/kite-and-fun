@@ -25,7 +25,10 @@
 
     .logo-text {
       @include logo-text;
-      color: #fff; // Footer background is black
+    }
+
+    .logo-text span {
+      color: white;
     }
   }
 

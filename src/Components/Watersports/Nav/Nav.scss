@@ -1,7 +1,7 @@
 @import "./../../../Sass/variables";
 @import "./../../../Sass/mixins";
 
-.portfolio-nav {
+.watersports-nav {
   position: relative;
   margin-bottom: 60px;
 
@@ -9,11 +9,11 @@
     margin-bottom: 40px;
   }
 
-  .portfolio-list {
+  .watersports-list {
     @include reset-list;
     text-align: center;
 
-    .portfolio-item {
+    .watersports-item {
       display: inline-block;
       padding-left: 30px;
       padding-right: 30px;

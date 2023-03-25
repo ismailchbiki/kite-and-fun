@@ -20,7 +20,7 @@
 ---- [ Done ] Resize Services Image
 -------------------- Services --------------------
 
--------------------- Portfolio Secion --------------------
+-------------------- Watersports Secion --------------------
 ---- [ Done ] Problem In portfoli getComputedStyle [ useEffect ] for resize & first load
 ---- [ Done ] Change portfoli Animation And Hide element from space
 ---- [ Done ] Fix Project Link
@@ -29,12 +29,12 @@
 ---- [ Done ] useDebounce To Handle Nav Line Resize
 ---- [ Done ] useThrottle To Handle Nav Link Click
 ---- [ Done ] Fix Active Class Problem
----- [ Done ] Portfolio Project Name Change In Dark Mode To Black [ Change Name Color Or Background Color ]
+---- [ Done ] Watersports Project Name Change In Dark Mode To Black [ Change Name Color Or Background Color ]
 ---- [ Done ] Change Header Title Color In Light Theme
 ---- [ Done ] Fix Active Class Color Problem In Dark Theme
 ---- [ Done ] Fix Line Color Problem In Dark Theme
----- [ Done ] Fix Portfolio Nav Click On The Same Active Link
--------------------- Portfolio Secion --------------------
+---- [ Done ] Fix Watersports Nav Click On The Same Active Link
+-------------------- Watersports Secion --------------------
 
 -------------------- Team --------------------
 ---- [ Done ] Problem In Team When Refresh
@@ -93,12 +93,12 @@
 ---- [ Done ] Contact Background Need Resize [ Increase Padding ]
 ---- [ Done ] Fix Some Accessiblity Problems
 ---- [ Done ] Fix Scroll To TOp Button Errors
----- [ Done ] Fix Link Problem In [ Services - Portfolio - Team ] Sections
+---- [ Done ] Fix Link Problem In [ Services - Watersports - Team ] Sections
 ---- [ Done ] Fix Unmounted Component To Avoid Lake Memory
 ---- [ Done ] Destructuring Small Props
 ---- [ Done ] Error In Console When Change Page
 ---- [ Done ] Change Some Settings To Change Start Create Controll Room For Colors
----- [ Done ] TypeError: Cannot read property 'textContent' of null Portfolio Nav Section
+---- [ Done ] TypeError: Cannot read property 'textContent' of null Watersports Nav Section
 					---- [ Appear When Resize Page After Change Page ]
 ---- [ Done ] TypeError: Cannot read property 'classList' of null
 					---- [ Appear When Resize Page After Change Page ]
@@ -112,14 +112,14 @@
 ---- [ Done ] Dark theme Btn Break When CLick A Lot
 ---- [ Done ] Use useContext To Apply Dark theme On Images & Button Icon
 ---- [ Done ] Create Custome Hook useAxios
----- [ Done ] Use useLayoutEffect Insted Of useEffect In Portfolio To Avoid Errors [ Not Working ]
----- [ Done ] Maintance Some Code In Portfolio
+---- [ Done ] Use useLayoutEffect Insted Of useEffect In Watersports To Avoid Errors [ Not Working ]
+---- [ Done ] Maintance Some Code In Watersports
 ---- [ Done ] Change Class Name Or Animate Dark theme Btn From [ rotate ] To [ animate ]
----- [ Done ] Portfolio Error [ Fix Resize Problem & Remove Resize Function When Unmount Component ]
+---- [ Done ] Watersports Error [ Fix Resize Problem & Remove Resize Function When Unmount Component ]
 ---- [ Done ] Create Newslatter Api
 ---- [ Done ] Change Dark Mode To Dark Theme & Custome Hook File Name
 ---- [ Done ] Change Svg Images Colors In Dark theme
----- [ Done ] Think About Change Portfolio Forground Color
+---- [ Done ] Think About Change Watersports Forground Color
 ---- [ Done ] Shadow Color [ Problem With Sass Should Use Sass Variable ]
 ---- [ Done ] Some Ui Changes
 ---- [ Done ] Accessiblity ( 97% )
@@ -151,7 +151,7 @@
 				---- [ Done ] Header
 				---- [ Done ] Services
 				---- [ Done ] About
-				---- [ Done ] Portfolio
+				---- [ Done ] Watersports
 				---- [ Done ] Team
 							---- Problem In Breaak Points
 							---- Big Preformance Problem Break Website In Dev Mode
@@ -161,11 +161,11 @@
 				---- [ Done ] Contact
 				---- [ Done ] Footer
 				---- [ Done ] Option Buttons
----- [ Done ] Check Functions That Should Not Work In Main Page useRouteMatch react-router [ Portfolio Btn ]
+---- [ Done ] Check Functions That Should Not Work In Main Page useRouteMatch react-router [ Watersports Btn ]
 ---- [ Done ] Problem With Pages When Click On Any Link Using React Router The Browser Remount Components In This Page
 				---- [ Done ] Navbar
 				---- [ Done ] Services
-				---- [ Done ] Portfolio
+				---- [ Done ] Watersports
 				---- [ Done ] Team
 				---- [ Done ] Footer
 ---- [ Done ] Create usePreventRouterLinks Hook For Handling Block Links To Remount Components

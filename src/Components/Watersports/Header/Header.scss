@@ -1,18 +1,18 @@
 @import "./../../../Sass/variables";
 @import "./../../../Sass/mixins";
 
-.portfolio-header {
+.watersports-header {
   margin-bottom: 100px;
 
   @media (max-width: $maxSmallScreens) {
     margin-bottom: 60px;
   }
 
-  .portfolio-title {
+  .watersports-title {
     @include section-title;
   }
 
-  .portfolio-paragraph {
+  .watersports-paragraph {
     @include section-paragraph;
   }
 }

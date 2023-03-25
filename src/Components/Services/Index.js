@@ -26,7 +26,7 @@ const Services = () => {
 
   // Fetch data
   const {
-    data: { content = [] },
+    data: { header = {}, content = [] },
     success,
     isPending,
     error,
@@ -34,14 +34,24 @@ const Services = () => {
 
   return (
     <section
+      // smooth scroll
+      id="Services"
       className="services"
-      style={darkTheme ? servicesBgDark : servicesBg}
+      style={
+        darkTheme
+          ? success
+            ? servicesBgDark
+            : null
+          : success
+          ? servicesBg
+          : null
+      }
     >
       {isPending && <Loading />}
 
       {success && (
         <div className="container">
-          <ServicesHeader />
+          <ServicesHeader header={header} />
           <ServicesBody content={content} />
         </div>
       )}

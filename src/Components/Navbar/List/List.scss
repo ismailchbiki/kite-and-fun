@@ -10,8 +10,9 @@
     left: 0;
     right: 0;
     width: 100%;
-    background-color: $upper-background-color;
-    border-radius: 0 0 20px 20px;
+    // background-color: $upper-background-color;
+    background-color: #025bbb;
+    border-radius: 20px 20px 20px 20px;
     box-shadow: 0 2px 15px $box-shadow-third-color;
     overflow: hidden;
     height: 0;
@@ -72,7 +73,8 @@
       @include reset-link;
       font-size: 1.14rem;
       font-weight: 600;
-      color: $third-color;
+      // color: $white-color;
+      color: white;
       transition: color 0.3s linear;
 
       &.active,

@@ -18,12 +18,12 @@ const ServicesBody = ({ content }) => {
   const servicesList = content.map((serv) => {
     return (
       <div key={serv.id} className="services-card">
-        {/* <Link
-          to={`${process.env.PUBLIC_URL}/services`}
+        <Link
+          to={`${process.env.PUBLIC_URL}/service-card`}
           onClick={preventRouterLinks}
           className="services-link"
           aria-label="Service Link"
-        ></Link> */}
+        ></Link>
 
         <h3 className="card-title">{serv.title}</h3>
         <div className="card-img">

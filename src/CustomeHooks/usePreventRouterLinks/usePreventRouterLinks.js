@@ -6,7 +6,7 @@ import { useLocation } from "react-router-dom";
 
 // Send Path To Custome Hook When The Link Is Static
 const usePreventRouterLinks = (path) => {
-  // This Variable Use For Links With Single Status Like Services & Portfolio
+  // This Variable Use For Links With Single Status Like Services & Watersports
   const isPathMatched = useLocation().pathname === path;
 
   // This Variable Use For Handle Current Location

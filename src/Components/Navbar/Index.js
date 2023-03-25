@@ -3,7 +3,7 @@ import React, { useState, useEffect, useRef } from "react";
 // Import Components
 import NavbarLogo from "./Logo/Logo";
 import NavbarResponsiveBtn from "./Button/Button";
-import NavbarList from "./List/List";
+import NavbarList from "./List/HeaderLinks";
 
 // Main Navbar Sass File
 import "./Index.scss";

@@ -25,7 +25,15 @@ const AboutBody = (props) => {
   }, 700);
 
   const {
-    content: { image, image_dark },
+    content: {
+      image,
+      image_dark,
+      title,
+      paragraph_1,
+      paragraph_1_more,
+      paragraph_2,
+      paragraph_2_more,
+    },
   } = props;
 
   return (
@@ -39,51 +47,14 @@ const AboutBody = (props) => {
       </div>
 
       <div className="about-desc">
-        <h3 className="desc-title">Ultimate guide to Morocco</h3>
+        <h3 className="desc-title">{title}</h3>
 
         <p className="desc-paragraph">
-          {!readMore ? (
-            <div>
-              Welcome to our informative website about kitesurf and water sports
-              in Morocco! Discover the best kite schools, water sports
-              activities, and ...
-            </div>
-          ) : (
-            <div>
-              Welcome to our informative website about kitesurf and water sports
-              in Morocco! Discover the best kite schools, water sports
-              activities, and culture that this beautiful country has to offer.
-            </div>
-          )}
+          {!readMore ? paragraph_1 : paragraph_1_more}
         </p>
 
         <p className="desc-paragraph">
-          {!readMore ? (
-            <div>
-              Our website is dedicated to helping tourists and foreigners
-              explore the exciting world of kitesurf and water sports in
-              Morocco. With our extensive knowledge of the country's top kite
-              schools, equipment rentals, and water sports activities, we aim to
-              provide our visitors with a one-stop-shop for ...
-            </div>
-          ) : (
-            <div>
-              Our website is dedicated to helping tourists and foreigners
-              explore the exciting world of kitesurf and water sports in
-              Morocco. With our extensive knowledge of the country's top kite
-              schools, equipment rentals, and water sports activities, we aim to
-              provide our visitors with a one-stop-shop for all their
-              kiteboarding and water sports needs. Whether you're a beginner or
-              an experienced kiteboarder, we have everything you need to make
-              the most out of your time in Morocco. Not only will you find
-              useful information about kitesurfing and other water sports, but
-              we also offer insights into Morocco's rich cultural heritage.
-              Discover the country's unique blend of Arabic, African, and
-              European influences while indulging in local cuisine, shopping in
-              traditional markets, and exploring historical landmarks. Let us be
-              your guide to the ultimate adventure in Morocco!
-            </div>
-          )}
+          {!readMore ? paragraph_2 : paragraph_2_more}
         </p>
 
         <button className="desc-btn" onClick={handleReading}>

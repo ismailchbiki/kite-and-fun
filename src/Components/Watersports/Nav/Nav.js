@@ -1,14 +1,14 @@
 import React, { useState, useEffect, useRef, useCallback } from "react";
 
 // Import Custome Hooks
-import useDebounce from "./../../../CustomeHooks/useDebounce/useDebounce";
-import useThrottle from "./../../../CustomeHooks/useThrottle/useThrottle";
+import useDebounce from "../../../CustomeHooks/useDebounce/useDebounce";
+import useThrottle from "../../../CustomeHooks/useThrottle/useThrottle";
 
-// Main Portfolio Nav Sass File
+// Main Watersports Nav Sass File
 import "./Nav.scss";
 
-// Portfolio Nav Component
-const PortfolioNav = ({ nav, type, changeType }) => {
+// Watersports Nav Component
+const WatersportsNav = ({ nav, type, changeType }) => {
   // Custome Hooks
   const { debounce } = useDebounce();
   const { throttle } = useThrottle();
@@ -79,7 +79,7 @@ const PortfolioNav = ({ nav, type, changeType }) => {
       <li
         key={index}
         className={`${
-          activeItem === index ? "portfolio-item active" : "portfolio-item"
+          activeItem === index ? "watersports-item active" : "watersports-item"
         }`}
         onClick={(e) => handleLineClick(index, e.target)}
         ref={activeItem === index ? selected : null}
@@ -90,11 +90,11 @@ const PortfolioNav = ({ nav, type, changeType }) => {
   });
 
   return (
-    <div className="portfolio-nav">
-      <ul className="portfolio-list">{navList}</ul>
+    <div className="watersports-nav">
+      <ul className="watersports-list">{navList}</ul>
       <div className="list-line" style={lineStyle}></div>
     </div>
   );
 };
 
-export default PortfolioNav;
+export default WatersportsNav;

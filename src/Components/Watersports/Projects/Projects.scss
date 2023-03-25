@@ -46,10 +46,11 @@
       filter: brightness(15);
       border-radius: 65px;
 
-      @supports (backdrop-filter: blur(30px)) {
-        -webkit-backdrop-filter: blur(30px);
-        backdrop-filter: blur(1000px);
-      }
+      // A blur effect to the background of an element
+      // @supports (backdrop-filter: blur(30px)) {
+      //   -webkit-backdrop-filter: blur(30px);
+      //   backdrop-filter: blur(1000px);
+      // }
     }
 
     .project-link {
@@ -128,7 +129,7 @@
   }
 }
 
-.portfolio-link {
+.watersports-link {
   text-align: center;
   margin-top: 70px;
 

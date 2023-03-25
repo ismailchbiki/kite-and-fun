@@ -13,18 +13,22 @@
   display: block;
   position: relative;
   user-select: none;
+  width: 200px;
+  cursor: pointer;
+  // height: 90px;
 }
 
 // Logo Text Mixin
 @mixin logo-text {
   @include first-header;
   font-size: 30px;
-  color: $third-color;
+  color: $main-color;
   user-select: none;
   font-weight: normal;
   font-weight: bold;
   font-family: "Poppins", sans-serif;
   font-style: italic;
+  cursor: pointer;
 
   @media (max-width: $maxLargeScreens) {
     font-size: 30px;
@@ -35,6 +39,7 @@
   }
 
   span {
-    color: $main-color;
+    // color: $third-color;
+    color: $white-color;
   }
 }

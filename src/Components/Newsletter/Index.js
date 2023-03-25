@@ -22,7 +22,11 @@ const Newsletter = () => {
   } = useAxios("./Apis/newsletter.json", []);
 
   return (
-    <section className="newsletter">
+    <section
+      // smooth scroll
+      id="Newsletter"
+      className="newsletter"
+    >
       {isPending && <Loading />}
 
       {success && (

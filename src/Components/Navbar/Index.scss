@@ -1,9 +1,11 @@
 @import "./../../Sass/variables";
 
 .navbar {
-  background-color: transparent;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  // background-color: transparent;
+  background-color: #025bbb;
+  // padding-top: 20px;
+  // padding-bottom: 20px;
+  padding: 0;
   position: fixed;
   top: 0;
   left: 0;
@@ -11,6 +13,7 @@
   width: 100%;
   z-index: 1000;
   transition: all 0.3s linear;
+  // opacity: 85%;
 
   // Navbar Inner Using For Grid System
   .navbar-inner {
@@ -20,15 +23,18 @@
   }
 
   &.scroll {
-    background-color: $upper-background-color;
+    // background-color: $upper-background-color;
+    background-color: #025bbb;
     box-shadow: 0 2px 15px $box-shadow-third-color;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    // padding-top: 10px;
+    // padding-bottom: 10px;
+    padding: 0;
   }
 
   // Handle Open Navbar In Responsive Mode
   &.open {
-    background-color: $upper-background-color;
+    // background-color: $upper-background-color;
+    background-color: #025bbb;
     box-shadow: none;
 
     .navbar-responsive-btn {

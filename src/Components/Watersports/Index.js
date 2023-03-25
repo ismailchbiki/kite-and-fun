@@ -1,30 +1,30 @@
 import React, { useState, useRef } from "react";
 
 // Import Custome Hooks
-import useAxios from "./../../CustomeHooks/useAxios/useAxios";
-import { useDarkTheme } from "./../../CustomeHooks/useDarkTheme/useDarkTheme";
+import useAxios from "../../CustomeHooks/useAxios/useAxios";
+import { useDarkTheme } from "../../CustomeHooks/useDarkTheme/useDarkTheme";
 
 // Import Components
-import PortfolioProjects from "./Projects/Projects";
-import PortfolioNav from "./Nav/Nav";
-import PortfolioHeader from "./Header/Header";
-import Loading from "./../Loading/Index";
-import Error from "./../Error/Index";
+import WatersportsProjects from "./Projects/Projects";
+import WatersportsNav from "./Nav/Nav";
+import WatersportsHeader from "./Header/Header";
+import Loading from "../Loading/Index";
+import Error from "../Error/Index";
 
 // Main About Sass File
 import "./Index.scss";
 
-// Portfolio Background
-const PortfolioBg = {
-  backgroundImage: "url('./Images/Portfolio/background.svg')",
+// Watersports Background
+const WatersportsBg = {
+  backgroundImage: "url('./Images/Watersports/background.svg')",
 };
 
-const PortfolioBgDark = {
-  backgroundImage: "url('./Images/Portfolio/background-dark.svg')",
+const WatersportsBgDark = {
+  backgroundImage: "url('./Images/Watersports/background-dark.svg')",
 };
 
-// Main Portfolio Component
-const Portfolio = () => {
+// Main Watersports Component
+const Watersports = () => {
   // Custome Hooks
   const darkTheme = useDarkTheme();
 
@@ -34,7 +34,7 @@ const Portfolio = () => {
     success,
     isPending,
     error,
-  } = useAxios("./Apis/portfolio.json", []);
+  } = useAxios("./Apis/Watersports.json", []);
 
   // Refs
   const projectsContainer = useRef();
@@ -59,14 +59,16 @@ const Portfolio = () => {
 
   return (
     <section
-      className="portfolio"
+      // smooth scroll
+      id="watersports"
+      className="watersports"
       style={
         darkTheme
           ? success
-            ? PortfolioBgDark
+            ? WatersportsBgDark
             : null
           : success
-          ? PortfolioBg
+          ? WatersportsBg
           : null
       }
     >
@@ -74,11 +76,11 @@ const Portfolio = () => {
 
       {success && (
         <div className="container">
-          <PortfolioHeader header={header} />
+          <WatersportsHeader header={header} />
 
-          <section className="portfolio-body">
-            <PortfolioNav nav={nav} type={type} changeType={changeType} />
-            <PortfolioProjects
+          <section className="watersports-body">
+            <WatersportsNav nav={nav} type={type} changeType={changeType} />
+            <WatersportsProjects
               projects={projects}
               type={type}
               projectsContainer={projectsContainer}
@@ -87,9 +89,9 @@ const Portfolio = () => {
         </div>
       )}
 
-      {error && <Error message={error.message} name="Portfolio" />}
+      {error && <Error message={error.message} name="Watersports" />}
     </section>
   );
 };
 
-export default Portfolio;
+export default Watersports;

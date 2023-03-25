@@ -2,18 +2,18 @@ import { useState, Fragment } from "react";
 import { Link } from "react-router-dom";
 
 // Import Custome Hooks
-import useThrottle from "./../../../CustomeHooks/useThrottle/useThrottle";
-import usePreventRouterLinks from "./../../../CustomeHooks/usePreventRouterLinks/usePreventRouterLinks";
+import useThrottle from "../../../CustomeHooks/useThrottle/useThrottle";
+import usePreventRouterLinks from "../../../CustomeHooks/usePreventRouterLinks/usePreventRouterLinks";
 
-// Main Portfolio Projects Sass File
+// Main Watersports Projects Sass File
 import "./Projects.scss";
 
-// Portfolio Projects Component
-const PortfolioProjects = ({ projects, type, projectsContainer }) => {
+// Watersports Projects Component
+const WatersportsProjects = ({ projects, type, projectsContainer }) => {
   // Custome Hooks
   const { throttle } = useThrottle();
   const { preventRouterLinks, isPathMatched } = usePreventRouterLinks(
-    `${process.env.PUBLIC_URL}/portfolio`
+    `${process.env.PUBLIC_URL}/watersports`
   );
 
   // Default Number Of Projects
@@ -47,7 +47,7 @@ const PortfolioProjects = ({ projects, type, projectsContainer }) => {
         }`}
       >
         <Link
-          to={`${process.env.PUBLIC_URL}/portfolio`}
+          to={`${process.env.PUBLIC_URL}/watersports`}
           onClick={preventRouterLinks}
           className="project-link"
           aria-label="Project Link"
@@ -69,9 +69,9 @@ const PortfolioProjects = ({ projects, type, projectsContainer }) => {
       <div className="projects" ref={projectsContainer}>
         {projectsList}
       </div>
-      <div className="portfolio-link">
+      <div className="watersports-link">
         <Link
-          to={`${process.env.PUBLIC_URL}/portfolio`}
+          to={`${process.env.PUBLIC_URL}/watersports`}
           onClick={isPathMatched ? viewAllProjects : null}
         >
           {numberOfProjects >= projects.length ? "View Less" : "View All"}
@@ -81,4 +81,4 @@ const PortfolioProjects = ({ projects, type, projectsContainer }) => {
   );
 };
 
-export default PortfolioProjects;
+export default WatersportsProjects;

@@ -22,7 +22,11 @@ const Contact = () => {
   } = useAxios("./Apis/contact.json", []);
 
   return (
-    <section className="contact">
+    <section
+      // smooth scroll
+      id="Contact"
+      className="contact"
+    >
       {isPending && <Loading />}
 
       {success && (

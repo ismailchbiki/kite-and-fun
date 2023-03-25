@@ -21,7 +21,11 @@ const Team = () => {
   } = useAxios("./Apis/team.json", []);
 
   return (
-    <section className="team">
+    <section
+      // smooth scroll
+      id="Team"
+      className="team"
+    >
       {isPending && <Loading />}
 
       {success && (

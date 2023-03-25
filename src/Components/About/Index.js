@@ -16,19 +16,23 @@ import "./Index.scss";
 const About = () => {
   // Fetch data
   const {
-    data: { content = {} },
+    data: { header = {}, content = {} },
     success,
     isPending,
     error,
   } = useAxios("./Apis/about.json", []);
 
   return (
-    <section className="about">
+    <section
+      // smooth scroll
+      id="About"
+      className="about"
+    >
       {isPending && <Loading />}
 
       {success && (
         <div className="container">
-          <AboutHeader />
+          <AboutHeader header={header} />
           <AboutBody content={content} />
         </div>
       )}
