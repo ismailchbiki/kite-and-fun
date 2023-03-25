@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom";
-import { Link as ScrollLink } from "react-scroll";
+// import { Link as ScrollLink } from "react-scroll";
 
 const LinkItem = ({ id, linkText, link, handleCLick }) => {
   return (

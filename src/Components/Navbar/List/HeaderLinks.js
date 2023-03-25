@@ -14,7 +14,7 @@ const NavbarList = ({ setNavbarOpen }) => {
 
   // Fetch data
   const {
-    data: { links = [], button = {} },
+    data: { links = [] },
   } = useAxios("./Apis/navbar.json", []);
 
   const handleCLick = (e, link) => {

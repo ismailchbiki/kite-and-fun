@@ -7,7 +7,6 @@ import { DarkThemeProvider } from "./CustomeHooks/useDarkTheme/useDarkTheme";
 // Import Components
 import Navbar from "./Components/Navbar/Index";
 import Index from "./Components/Index/Index";
-import Services from "./Components/Services/Index";
 import Watersports from "./Components/Watersports/Index";
 import Team from "./Components/Team/Index";
 import Contact from "./Components/Contact/Index";
@@ -27,10 +26,6 @@ function App() {
 
         <Routes>
           <Route path={`${process.env.PUBLIC_URL}/`} element={<Index />} />
-          <Route
-            path={`${process.env.PUBLIC_URL}/services`}
-            element={<Services />}
-          />
           <Route
             path={`${process.env.PUBLIC_URL}/watersports`}
             element={<Watersports />}

@@ -1,0 +1,18 @@
+@import "../../../Sass/Variables";
+@import "../../../Sass/mixins";
+
+.destinations-header {
+  margin-bottom: 100px;
+
+  @media (max-width: $maxSmallScreens) {
+    margin-bottom: 70px;
+  }
+
+  .destinations-title {
+    @include section-title;
+  }
+
+  .destinations-paragraph {
+    @include section-paragraph;
+  }
+}

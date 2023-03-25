@@ -6,7 +6,7 @@ import useAxios from "./../../CustomeHooks/useAxios/useAxios";
 // Import Components
 import FooterFooter from "./Footer/Footer";
 import FooterLinks from "./Links/Links";
-import FooterHeader from "./Header/Header";
+// import FooterHeader from "./Header/Header";
 import Loading from "./../Loading/Index";
 import Error from "./../Error/Index";
 
@@ -18,7 +18,7 @@ const Footer = () => {
   // Fetch data
   const {
     data: {
-      header = {},
+      // header = {},
       content = [
         {
           id: 1,
