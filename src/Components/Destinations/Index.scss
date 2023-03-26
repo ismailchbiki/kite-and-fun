@@ -5,10 +5,10 @@
   background-color: $background-color;
   background-size: cover;
   background-position: center left;
-  text-align: center;
+  // text-align: center;
   padding-top: 150px;
   padding-bottom: 50px;
-  min-height: 400px;
+  // min-height: 400px;
 
   @media (max-width: $maxSmallScreens) {
     padding-top: 110px;

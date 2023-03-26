@@ -20,7 +20,7 @@ const DestinationsBody = ({ content, buttonText }) => {
   // Get Destinations List
   const destinationsList = content.map((destination) => {
     return (
-      <article className="destination-card">
+      <div className={`destination-card ${destination.size}`}>
         <img
           className="destination-card__background"
           src={destination.image && destination.image}
@@ -39,13 +39,11 @@ const DestinationsBody = ({ content, buttonText }) => {
             {buttonText}
           </button>
         </div>
-      </article>
+      </div>
     );
   });
 
-  return (
-    <section className="destinations-container">{destinationsList}</section>
-  );
+  return <div className="grid-wrapper">{destinationsList}</div>;
 };
 
 export default DestinationsBody;
