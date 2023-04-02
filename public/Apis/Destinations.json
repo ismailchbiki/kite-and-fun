@@ -8,65 +8,43 @@
       "id": 1,
       "title": "Dakhla",
       "image": "https://images.unsplash.com/photo-1541845157-a6d2d100c931?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1350&amp;q=80",
-      "body": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum in labore laudantium deserunt fugiat numquam.",
-      "size": ""
+      "body": "You don't get to be mom if you can't fix everything just right.",
+      "alt": "image of Dakhla"
     },
     {
       "id": 2,
       "title": "Essaouira",
       "image": "https://images.unsplash.com/photo-1588282322673-c31965a75c3e?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1351&amp;q=80",
-      "body": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum in labore laudantium deserunt fugiat numquam.",
-      "size": ""
+      "body": "You don't get to be mom if you can't fix everything just right.",
+      "alt": "image of Dakhla"
     },
     {
       "id": 3,
       "title": "Taghazout",
       "image": "https://images.unsplash.com/photo-1588282322673-c31965a75c3e?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1351&amp;q=80",
-      "body": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum in labore laudantium deserunt fugiat numquam.",
-      "size": "tall"
+      "body": "You don't get to be mom if you can't fix everything just right.",
+      "alt": "image of Dakhla"
     },
     {
       "id": 4,
-      "title": "Imsouane",
-      "image": "https://images.unsplash.com/photo-1588282322673-c31965a75c3e?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1351&amp;q=80",
-      "body": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum in labore laudantium deserunt fugiat numquam.",
-      "size": "wide"
+      "title": "Moulay Bouzerktoune",
+      "image": "https://images.unsplash.com/photo-1541845157-a6d2d100c931?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1350&amp;q=80",
+      "body": "You don't get to be mom if you can't fix everything just right.",
+      "alt": "image of Dakhla"
     },
     {
       "id": 5,
-      "title": "Moulay Bouzerktoune",
-      "image": "https://images.unsplash.com/photo-1541845157-a6d2d100c931?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1350&amp;q=80",
-      "body": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum in labore laudantium deserunt fugiat numquam.",
-      "size": ""
+      "title": "Sidi Kauki",
+      "image": "https://images.unsplash.com/photo-1588492885706-b8917f06df77?ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=1951&amp;q=80",
+      "body": "You don't get to be mom if you can't fix everything just right.",
+      "alt": "image of Dakhla"
     },
     {
       "id": 6,
-      "title": "Sidi Kauki",
-      "image": "https://images.unsplash.com/photo-1588492885706-b8917f06df77?ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=1951&amp;q=80",
-      "body": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum in labore laudantium deserunt fugiat numquam.",
-      "size": "big"
-    },
-    {
-      "id": 7,
-      "title": "Sidi Ifni",
-      "image": "https://images.unsplash.com/photo-1588247866001-68fa8c438dd7?ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=564&amp;q=80",
-      "body": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum in labore laudantium deserunt fugiat numquam.",
-      "size": ""
-    },
-    {
-      "id": 8,
       "title": "Safi",
       "image": "https://images.unsplash.com/photo-1586521995568-39abaa0c2311?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1350&amp;q=80",
-      "body": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum in labore laudantium deserunt fugiat numquam.",
-      "size": "wide"
-    },
-    {
-      "id": 9,
-      "title": "Safi",
-      "image": "https://images.unsplash.com/photo-1572914857229-37bf6ee8101c?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1951&amp;q=80",
-      "body": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum in labore laudantium deserunt fugiat numquam.",
-      "size": "big"
+      "body": "You don't get to be mom if you can't fix everything just right.",
+      "alt": "image of Dakhla"
     }
-  ],
-  "buttonText": "Discover"
+  ]
 }

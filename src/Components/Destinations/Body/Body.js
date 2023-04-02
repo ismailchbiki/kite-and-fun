@@ -7,43 +7,39 @@ import usePreventRouterLinks from "../../../CustomeHooks/usePreventRouterLinks/u
 import "./Body.scss";
 
 // Destinations Container Component
-const DestinationsBody = ({ content, buttonText }) => {
+const DestinationsBody = ({ content }) => {
   const { preventRouterLinks } = usePreventRouterLinks(
     `${process.env.PUBLIC_URL}/destinations`
   );
 
   const navigate = useNavigate();
-  const handleButtonClick = () => {
-    navigate(`${process.env.PUBLIC_URL}/destination`);
+  const handleButtonClick = (id) => {
+    navigate(`${process.env.PUBLIC_URL}/destination/${id}`);
   };
 
   // Get Destinations List
   const destinationsList = content.map((destination) => {
     return (
-      <div className={`destination-card ${destination.size}`}>
+      <div key={destination.id} className="snip1482">
+        <figcaption>
+          <h2>{destination.title}</h2>
+          <p>{destination.body}</p>
+        </figcaption>
+        <a
+          onClick={() => handleButtonClick(destination.id)}
+          {...preventRouterLinks}
+        >
+          <></>
+        </a>
         <img
-          className="destination-card__background"
           src={destination.image && destination.image}
-          alt="Cartagena's cathedral at the background and some colonial style houses"
+          alt={destination.alt && destination.alt}
         />
-        <div className="destination-card__content | flow">
-          <div className="destination-card__content--container | flow">
-            <h2 className="destination-card__title">{destination.title}</h2>
-            <p className="destination-card__description">{destination.body}</p>
-          </div>
-          <button
-            className="destination-card__button"
-            onClick={handleButtonClick}
-            {...preventRouterLinks}
-          >
-            {buttonText}
-          </button>
-        </div>
       </div>
     );
   });
 
-  return <div className="grid-wrapper">{destinationsList}</div>;
+  return <div className="destinations-cards">{destinationsList}</div>;
 };
 
 export default DestinationsBody;

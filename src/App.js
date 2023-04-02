@@ -16,6 +16,7 @@ import NotFound from "./Components/NotFound/Index";
 // Import App Main Sass File
 import "./App.scss";
 import About from "./Components/About/Index";
+import Destination from "./Components/Destinations/Body/Destination-Item/Destination";
 
 function App() {
   return (
@@ -36,6 +37,10 @@ function App() {
             element={<Contact />}
           />
           <Route path={`${process.env.PUBLIC_URL}/about`} element={<About />} />
+          <Route
+            path={`${process.env.PUBLIC_URL}/destination/:id`}
+            element={<Destination />}
+          />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </Router>
