@@ -19,7 +19,7 @@ const Contact = () => {
     success,
     isPending,
     error,
-  } = useAxios("./Apis/contact.json", []);
+  } = useAxios("/Apis/contact.json", []);
 
   return (
     <section

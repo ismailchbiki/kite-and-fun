@@ -41,7 +41,7 @@ const Footer = () => {
     success,
     isPending,
     error,
-  } = useAxios("./Apis/footer.json", []);
+  } = useAxios("/Apis/footer.json", []);
 
   return (
     <footer className="main-footer">

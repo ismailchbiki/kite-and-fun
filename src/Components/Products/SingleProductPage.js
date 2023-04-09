@@ -1,7 +1,6 @@
 import { useEffect } from "react";
 import { useParams, useNavigate, Link } from "react-router-dom";
 import { useProductsContext } from "./context/products_context";
-import { single_product_url as url } from "./utils/constants";
 import { formatPrice } from "./utils/helpers";
 import { Loading, ProductImages, Stars } from "./components";
 import "./Products-page-global.scss";
@@ -18,7 +17,7 @@ const SingleProductPage = () => {
   } = useProductsContext();
 
   useEffect(() => {
-    fetchSingleProduct(`${url}${id}`);
+    fetchSingleProduct(id);
     // eslint-disable-next-line
   }, [id]);
 
@@ -34,6 +33,7 @@ const SingleProductPage = () => {
   if (loading) {
     return <Loading />;
   }
+
   const {
     name,
     price,
@@ -45,6 +45,7 @@ const SingleProductPage = () => {
     company,
     images,
   } = product;
+
   return (
     <Wrapper>
       <div className="section section-center page">

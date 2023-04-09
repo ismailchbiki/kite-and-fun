@@ -3,7 +3,6 @@ import { Fragment } from "react";
 import Header from "./../Header/Index";
 import Services from "./../Services/Index";
 import Destinations from "./../Destinations/Index";
-// import Team from "./../Team/Index";
 // import Newsletter from "./../Newsletter/Index";
 import Footer from "./../Footer/Index";
 
@@ -13,7 +12,6 @@ const Index = () => {
       <Header />
       <Services />
       <Destinations />
-      {/* <Team /> */}
       {/* <Newsletter /> */}
       <Footer />
     </Fragment>

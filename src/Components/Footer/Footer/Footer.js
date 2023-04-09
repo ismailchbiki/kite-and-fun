@@ -12,7 +12,7 @@ const FooterFooter = ({ copyRight }) => {
   const { preventRouterLinks } = usePreventRouterLinks("/");
 
   // Fetch Social
-  const { data: social = [] } = useAxios("./Apis/social.json", []);
+  const { data: social = [] } = useAxios("/Apis/social.json", []);
 
   // Get Social List
   const socialList = social.map((item) => {

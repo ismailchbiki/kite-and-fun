@@ -30,7 +30,7 @@ const Destinations = () => {
     success,
     isPending,
     error,
-  } = useAxios("./Apis/Destinations.json", []);
+  } = useAxios("/Apis/Destinations.json", []);
 
   return (
     <section

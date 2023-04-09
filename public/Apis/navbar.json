@@ -6,22 +6,17 @@
       "text": "Home"
     },
     {
-      "id": 3,
-      "link": "/watersports",
-      "text": "Watersports"
-    },
-    {
-      "id": 4,
+      "id": 2,
       "link": "/products",
       "text": "Products"
     },
     {
-      "id": 5,
+      "id": 3,
       "link": "/about",
       "text": "About"
     },
     {
-      "id": 6,
+      "id": 4,
       "link": "/contact",
       "text": "Contact"
     }

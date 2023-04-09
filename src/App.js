@@ -7,7 +7,6 @@ import { DarkThemeProvider } from "./CustomeHooks/useDarkTheme/useDarkTheme";
 // Import Components
 import Navbar from "./Components/Navbar/Index";
 import Index from "./Components/Index/Index";
-import Watersports from "./Components/Watersports/Index";
 import Contact from "./Components/Contact/Index";
 import Buttons from "./Components/Buttons/Index";
 import NotFound from "./Components/NotFound/Index";
@@ -28,7 +27,6 @@ function App() {
 
         <Routes>
           <Route exact path="/" element={<Index />} />
-          <Route path={"/watersports"} element={<Watersports />} />
           <Route path={"/products"} element={<Products />} />
           <Route path={"/products/:id"} element={<SingleProduct />} />
           <Route path={"/contact"} element={<Contact />} />

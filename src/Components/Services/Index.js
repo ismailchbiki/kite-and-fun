@@ -30,7 +30,7 @@ const Services = () => {
     success,
     isPending,
     error,
-  } = useAxios("./Apis/services.json", []);
+  } = useAxios("/Apis/services.json", []);
 
   return (
     <section

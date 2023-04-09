@@ -19,7 +19,7 @@ const Newsletter = () => {
     success,
     isPending,
     error,
-  } = useAxios("./Apis/newsletter.json", []);
+  } = useAxios("/Apis/newsletter.json", []);
 
   return (
     <section

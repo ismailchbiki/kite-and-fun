@@ -20,7 +20,7 @@ const About = () => {
     success,
     isPending,
     error,
-  } = useAxios("./Apis/about.json", []);
+  } = useAxios("/Apis/about.json", []);
 
   return (
     <section
