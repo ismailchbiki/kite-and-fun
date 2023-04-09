@@ -8,13 +8,11 @@ import "./Body.scss";
 
 // Destinations Container Component
 const DestinationsBody = ({ content }) => {
-  const { preventRouterLinks } = usePreventRouterLinks(
-    `${process.env.PUBLIC_URL}/destinations`
-  );
+  const { preventRouterLinks } = usePreventRouterLinks("destinations");
 
   const navigate = useNavigate();
   const handleButtonClick = (id) => {
-    navigate(`${process.env.PUBLIC_URL}/destination/${id}`);
+    navigate(`/destination/${id}`);
   };
 
   // Get Destinations List

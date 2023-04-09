@@ -15,7 +15,7 @@ const NavbarList = ({ setNavbarOpen }) => {
   // Fetch data
   const {
     data: { links = [] },
-  } = useAxios("./Apis/navbar.json", []);
+  } = useAxios("/Apis/navbar.json", []);
 
   const handleCLick = (e, link) => {
     preventRouterLinks(e, link);

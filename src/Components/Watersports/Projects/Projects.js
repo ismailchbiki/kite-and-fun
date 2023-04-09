@@ -12,9 +12,8 @@ import "./Projects.scss";
 const WatersportsProjects = ({ projects, type, projectsContainer }) => {
   // Custome Hooks
   const { throttle } = useThrottle();
-  const { preventRouterLinks, isPathMatched } = usePreventRouterLinks(
-    `${process.env.PUBLIC_URL}/watersports`
-  );
+  const { preventRouterLinks, isPathMatched } =
+    usePreventRouterLinks("/watersports");
 
   // Default Number Of Projects
   const defaultNumber = 9;
@@ -47,7 +46,7 @@ const WatersportsProjects = ({ projects, type, projectsContainer }) => {
         }`}
       >
         <Link
-          to={`${process.env.PUBLIC_URL}/watersports`}
+          to="/watersports"
           onClick={preventRouterLinks}
           className="project-link"
           aria-label="Project Link"
@@ -71,7 +70,7 @@ const WatersportsProjects = ({ projects, type, projectsContainer }) => {
       </div>
       <div className="watersports-link">
         <Link
-          to={`${process.env.PUBLIC_URL}/watersports`}
+          to="/watersports"
           onClick={isPathMatched ? viewAllProjects : null}
         >
           {numberOfProjects >= projects.length ? "View Less" : "View All"}

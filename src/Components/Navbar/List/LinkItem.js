@@ -7,9 +7,9 @@ const LinkItem = ({ id, linkText, link, handleCLick }) => {
       <li key={id} className="navbar-item">
         <NavLink
           exact="true"
-          to={`${process.env.PUBLIC_URL}${link}`}
+          to={`${link}`}
           className="navbar-link"
-          onClick={(e) => handleCLick(e, `${process.env.PUBLIC_URL}${link}`)}
+          onClick={(e) => handleCLick(e, `${link}`)}
         >
           {linkText}
         </NavLink>
@@ -17,7 +17,7 @@ const LinkItem = ({ id, linkText, link, handleCLick }) => {
 
       {/* <li className="navbar-item">
         <ScrollLink
-          to={`${process.env.PUBLIC_URL}${linkText}`}
+          to={`${linkText}`}
           smooth={true}
           duration={200}
           className="navbar-link"

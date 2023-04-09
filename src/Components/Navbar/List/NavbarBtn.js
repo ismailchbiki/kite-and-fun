@@ -5,8 +5,8 @@ const NavbarBtn = ({ buttonText, handleCLick }) => {
     <>
       <li className="navbar-item navbar-btn">
         <Link
-          to={`${process.env.PUBLIC_URL}/`}
-          onClick={(e) => handleCLick(e, process.env.PUBLIC_URL + "/")}
+          to="/"
+          onClick={(e) => handleCLick(e, "/")}
           className="navbar-link"
         >
           <span className="navbar-btn-text">{buttonText}</span>

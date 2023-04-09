@@ -9,9 +9,7 @@ import "./Footer.scss";
 
 // Footer Footer Component
 const FooterFooter = ({ copyRight }) => {
-  const { preventRouterLinks } = usePreventRouterLinks(
-    `${process.env.PUBLIC_URL}/`
-  );
+  const { preventRouterLinks } = usePreventRouterLinks("/");
 
   // Fetch Social
   const { data: social = [] } = useAxios("./Apis/social.json", []);
@@ -33,11 +31,7 @@ const FooterFooter = ({ copyRight }) => {
 
   return (
     <footer className="footer-footer">
-      <Link
-        to={`${process.env.PUBLIC_URL}/`}
-        onClick={preventRouterLinks}
-        className="logo"
-      >
+      <Link to="/" onClick={preventRouterLinks} className="logo">
         <div className="logo-text">
           Kite <span>& Fun</span>
         </div>

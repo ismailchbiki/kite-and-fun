@@ -8,7 +8,6 @@ import { DarkThemeProvider } from "./CustomeHooks/useDarkTheme/useDarkTheme";
 import Navbar from "./Components/Navbar/Index";
 import Index from "./Components/Index/Index";
 import Watersports from "./Components/Watersports/Index";
-import Team from "./Components/Team/Index";
 import Contact from "./Components/Contact/Index";
 import Buttons from "./Components/Buttons/Index";
 import NotFound from "./Components/NotFound/Index";
@@ -17,6 +16,8 @@ import NotFound from "./Components/NotFound/Index";
 import "./App.scss";
 import About from "./Components/About/Index";
 import Destination from "./Components/Destinations/Body/Destination-Item/Destination";
+import Products from "./Components/Products/ProductsPage";
+import SingleProduct from "./Components/Products/SingleProductPage";
 
 function App() {
   return (
@@ -26,21 +27,13 @@ function App() {
         <Buttons />
 
         <Routes>
-          <Route path={`${process.env.PUBLIC_URL}/`} element={<Index />} />
-          <Route
-            path={`${process.env.PUBLIC_URL}/watersports`}
-            element={<Watersports />}
-          />
-          <Route path={`${process.env.PUBLIC_URL}/team`} element={<Team />} />
-          <Route
-            path={`${process.env.PUBLIC_URL}/contact`}
-            element={<Contact />}
-          />
-          <Route path={`${process.env.PUBLIC_URL}/about`} element={<About />} />
-          <Route
-            path={`${process.env.PUBLIC_URL}/destination/:id`}
-            element={<Destination />}
-          />
+          <Route exact path="/" element={<Index />} />
+          <Route path={"/watersports"} element={<Watersports />} />
+          <Route path={"/products"} element={<Products />} />
+          <Route path={"/products/:id"} element={<SingleProduct />} />
+          <Route path={"/contact"} element={<Contact />} />
+          <Route path={"/about"} element={<About />} />
+          <Route path={"destination/:id"} element={<Destination />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </Router>

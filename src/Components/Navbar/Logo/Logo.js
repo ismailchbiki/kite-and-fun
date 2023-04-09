@@ -9,18 +9,16 @@ import "./Logo.scss";
 
 // Navbar Logo Component
 const NavbarLogo = () => {
-  const { preventRouterLinks } = usePreventRouterLinks(
-    `${process.env.PUBLIC_URL}/`
-  );
+  const { preventRouterLinks } = usePreventRouterLinks("/");
 
   // Fetch data
   const {
     data: { image = "", text = "" },
-  } = useAxios("./Apis/logo.json", []);
+  } = useAxios("/Apis/logo.json", []);
 
   return (
     // <Link
-    //   to={`${process.env.PUBLIC_URL}/`}
+    //   to="/"
     //   onClick={preventRouterLinks}
     //   className="logo"
     // >
@@ -36,11 +34,7 @@ const NavbarLogo = () => {
     //   </div> */}
     // </Link>
 
-    <Link
-      to={`${process.env.PUBLIC_URL}/`}
-      onClick={preventRouterLinks}
-      className="logo"
-    >
+    <Link to="/" onClick={preventRouterLinks} className="logo">
       {image && (
         <img src={image} alt="Logo" draggable="false" className="logo-image" />
       )}
