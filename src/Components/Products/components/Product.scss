@@ -1,0 +1,53 @@
+@import "../../../Sass/variables.scss";
+@import "../../../Sass/mixins.scss";
+
+.product-container {
+  position: relative;
+  background: $dark-grey;
+  border-radius: $radius;
+}
+img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+  border-radius: $radius;
+  transition: var($transition);
+}
+.link {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: $main-color;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  transition: var($transition);
+  opacity: 0;
+  cursor: pointer;
+  svg {
+    font-size: 1.25rem;
+    color: $white;
+  }
+}
+.product-container:hover img {
+  opacity: 0.5;
+}
+.product-container:hover .link {
+  opacity: 1;
+}
+footer {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer h5,
+footer p {
+  margin-bottom: 0;
+  font-weight: 400;
+  letter-spacing: $spacing;
+}

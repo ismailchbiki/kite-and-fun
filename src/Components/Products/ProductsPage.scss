@@ -1,18 +1,14 @@
-.page {
-  min-height: calc(100vh - (20vh + 10rem));
-  margin-top: 8%;
-}
+@import "./../../Sass/variables.scss";
+@import "./../../Sass/mixins.scss";
 
 .section-center {
-  width: 90vw;
+  width: 80vw;
   margin: 0 auto;
-  max-width: var(--max-width);
 }
 
 .products {
   display: grid;
   gap: 3rem 1.5rem;
-  margin: 4rem auto;
 }
 
 @media (min-width: 768px) {

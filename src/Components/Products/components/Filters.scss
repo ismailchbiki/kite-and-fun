@@ -1,3 +1,6 @@
+@import "../../../Sass/Variables.scss";
+@import "../../../Sass/mixins.scss";
+
 .filter {
   .form-control {
     margin-bottom: 1.25rem;
@@ -6,12 +9,13 @@
     }
   }
   .search-input {
-    padding: 0.5rem;
-    background: var(--clr-grey-10);
-    border-radius: var(--radius);
+    padding: 0.4rem 0;
+    background: $white-2;
+    border-radius: $radius;
     border-color: transparent;
-    outline-color: pink;
-    letter-spacing: var(--spacing);
+    outline-color: $second-color;
+    letter-spacing: 0.1rem;
+    width: 160px;
   }
   .search-input::placeholder {
     text-transform: capitalize;
@@ -25,19 +29,20 @@
     background: transparent;
     border: none;
     border-bottom: 1px solid transparent;
-    letter-spacing: var(--spacing);
-    color: var(--clr-grey-5);
+    letter-spacing: 0.1rem;
+    color: $light-grey-2;
     cursor: pointer;
   }
   .active {
-    border-color: var(--clr-grey-5);
+    border-color: $light-grey-2;
   }
   .company {
-    background: var(--clr-grey-10);
-    border-radius: var(--radius);
+    background: $white-2;
+    border-radius: $radius;
     border-color: transparent;
-    padding: 0.25rem;
-    outline-color: pink;
+    padding: 0.4rem 0;
+    outline-color: $second-color;
+    width: 160px;
   }
   .colors {
     display: flex;
@@ -58,7 +63,7 @@
     justify-content: center;
     svg {
       font-size: 0.5rem;
-      color: var(--clr-white);
+      color: $white;
     }
   }
   .all-btn {
@@ -84,12 +89,14 @@
     text-transform: capitalize;
     column-gap: 0.5rem;
     font-size: 1rem;
+    color: $third-color;
   }
   .clear-btn {
-    background: var(--clr-red-dark);
-    color: var(--clr-white);
-    padding: 0.25rem 0.5rem;
-    border-radius: var(--radius);
+    background: $main-color;
+    color: $white-color;
+    padding: 0.4rem 0;
+    border-radius: $radius;
+    width: 160px;
   }
   @media (min-width: 768px) {
     .content {

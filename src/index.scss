@@ -3,7 +3,7 @@
 /***************************************************
 	Colors Set In This File For Two Reasons
 		1 - [ Handle Dark Mode ]
-		2 - [ To Avoid Repeat Code In Diffrent Sass Files When Import Colors Sass File ]
+		2 - [ To Avoid Repeat Code In Different Sass Files When Import Colors Sass File ]
 ***************************************************/
 
 // Start Main Colors Using Css Variables In Light Theme
@@ -24,7 +24,17 @@
 
   // constant colors
   --white: #fff;
+  --white-2: hsl(210, 36%, 96%);
   --dark-grey: #202123;
+  --light-grey: hsl(210, 31%, 80%);
+  --light-grey-2: hsl(210, 22%, 49%);
+  --Chocolate-color: hsl(22, 31%, 52%);
+
+  //mixed variables for products page
+  --transition: all 0.3s linear;
+  --spacing: 0.1rem;
+  --radius: 0.25rem;
+  --max-width: 1170px;
 }
 
 // End Main Colors Using Css Variables In Light Theme
@@ -37,7 +47,7 @@
   --fourth-color: #fff;
   --white-color: #262222;
 
-  --background-color: #121212;
+  --background-color: #202124;
   --upper-background-color: #232323;
 
   --box-shadow-third-color: rgba(255, 255, 255, 0.1);
