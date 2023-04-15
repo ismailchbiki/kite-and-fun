@@ -1,28 +1,19 @@
 import { useFilterContext } from "../context/filter_context";
-import { getUniqueValues, formatPrice } from "../utils/helpers";
+import { getUniqueValues } from "../utils/helpers";
 import { FaCheck } from "react-icons/fa";
 import { motion } from "framer-motion";
 import "./Filters.scss";
 
 const Filters = () => {
   const {
-    filters: {
-      text,
-      category,
-      company,
-      color,
-      min_price,
-      price,
-      max_price,
-      shipping,
-    },
+    filters: { text, category, location, color, swimming_pool },
     updateFilters,
     clearFilters,
     all_products,
   } = useFilterContext();
 
   const categories = getUniqueValues(all_products, "category");
-  const companies = getUniqueValues(all_products, "company");
+  const companies = getUniqueValues(all_products, "location");
   const colors = getUniqueValues(all_products, "colors");
 
   return (
@@ -66,12 +57,12 @@ const Filters = () => {
           {/* end of categories */}
           {/* companies */}
           <div className="form-control">
-            <h5>company</h5>
+            <h5>location</h5>
             <select
-              name="company"
-              value={company}
+              name="location"
+              value={location}
               onChange={updateFilters}
-              className="company"
+              className="location"
             >
               {companies.map((c, index) => {
                 return (
@@ -121,32 +112,19 @@ const Filters = () => {
             </div>
           </div>
           {/* end of color */}
-          {/* price */}
-          <div className="form-control">
-            <h5>price</h5>
-            <p className="price">{formatPrice(price)}</p>
-            <input
-              type="range"
-              name="price"
-              min={min_price}
-              max={max_price}
-              onChange={updateFilters}
-              value={price}
-            />
-          </div>
-          {/* end of price */}
-          {/* shipping */}
-          <div className="form-control shipping">
-            <label htmlFor="shipping"> free shipping</label>
+
+          {/* swimming_pool */}
+          <div className="form-control swimming_pool">
+            <label htmlFor="swimming_pool"> Swimming Pool</label>
             <input
               type="checkbox"
-              name="shipping"
-              id="shipping"
+              name="swimming_pool"
+              id="swimming_pool"
               onChange={updateFilters}
-              checked={shipping}
+              checked={swimming_pool}
             />
           </div>
-          {/* end of shipping */}
+          {/* end of swimming_pool */}
         </form>
         <button type="button" className="clear-btn" onClick={clearFilters}>
           clear filters

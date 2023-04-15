@@ -36,7 +36,7 @@
   .active {
     border-color: $light-grey-2;
   }
-  .company {
+  .location {
     background: $white-2;
     border-radius: $radius;
     border-color: transparent;
@@ -79,10 +79,7 @@
   .all-btn .active {
     text-decoration: underline;
   }
-  .price {
-    margin-bottom: 0.25rem;
-  }
-  .shipping {
+  .swimming_pool {
     display: grid;
     grid-template-columns: auto 1fr;
     align-items: center;

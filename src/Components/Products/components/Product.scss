@@ -43,11 +43,11 @@ footer {
   margin-top: 1rem;
   display: flex;
   justify-content: space-between;
-  align-items: center;
 }
-footer h5,
+footer span {
+  font-size: 1.5rem;
+}
 footer p {
-  margin-bottom: 0;
   font-weight: 400;
   letter-spacing: $spacing;
 }

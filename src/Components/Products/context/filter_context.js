@@ -16,16 +16,12 @@ const initialState = {
   filtered_products: [],
   all_products: [],
   grid_view: true,
-  sort: "price-lowest",
   filters: {
     text: "",
-    company: "all",
+    location: "all",
     category: "all",
     color: "all",
-    min_price: 0,
-    max_price: 0,
-    price: 0,
-    shipping: false,
+    swimming_pool: false,
   },
 };
 
@@ -67,10 +63,7 @@ export const FilterProvider = ({ children }) => {
     if (name === "color") {
       value = e.target.dataset.color;
     }
-    if (name === "price") {
-      value = Number(value);
-    }
-    if (name === "shipping") {
+    if (name === "swimming_pool") {
       value = e.target.checked;
     }
     dispatch({ type: UPDATE_FILTERS, payload: { name, value } });

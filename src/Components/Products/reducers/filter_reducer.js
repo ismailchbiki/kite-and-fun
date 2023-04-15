@@ -11,13 +11,10 @@ import {
 
 const filter_reducer = (state, action) => {
   if (action.type === LOAD_PRODUCTS) {
-    let maxPrice = action.payload.map((p) => p.price);
-    maxPrice = Math.max(...maxPrice);
     return {
       ...state,
       all_products: [...action.payload],
       filtered_products: [...action.payload],
-      filters: { ...state.filters, max_price: maxPrice, price: maxPrice },
     };
   }
   if (action.type === SET_GRIDVIEW) {
@@ -32,12 +29,7 @@ const filter_reducer = (state, action) => {
   if (action.type === SORT_PRODUCTS) {
     const { sort, filtered_products } = state;
     let tempProducts = [...filtered_products];
-    if (sort === "price-lowest") {
-      tempProducts = tempProducts.sort((a, b) => a.price - b.price);
-    }
-    if (sort === "price-highest") {
-      tempProducts = tempProducts.sort((a, b) => b.price - a.price);
-    }
+
     if (sort === "name-a") {
       tempProducts = tempProducts.sort((a, b) => {
         return a.name.localeCompare(b.name);
@@ -56,9 +48,10 @@ const filter_reducer = (state, action) => {
   }
   if (action.type === FILTER_PRODUCTS) {
     const { all_products } = state;
-    const { text, category, company, color, price, shipping } = state.filters;
+    const { text, category, location, color, swimming_pool } = state.filters;
     let tempProducts = [...all_products];
-    //filtering
+
+    /* FILTERING */
     //text
     if (text) {
       tempProducts = tempProducts.filter((product) => {
@@ -71,10 +64,10 @@ const filter_reducer = (state, action) => {
         (product) => product.category === category
       );
     }
-    //company
-    if (company !== "all") {
+    //location
+    if (location !== "all") {
       tempProducts = tempProducts.filter(
-        (product) => product.company === company
+        (product) => product.location === location
       );
     }
     //colors
@@ -83,12 +76,11 @@ const filter_reducer = (state, action) => {
         return product.colors.find((c) => c === color);
       });
     }
-    //price
-    tempProducts = tempProducts.filter((product) => product.price <= price);
-    //shipping
-    if (shipping) {
+
+    //swimming_pool
+    if (swimming_pool) {
       tempProducts = tempProducts.filter(
-        (product) => product.shipping === true
+        (product) => product.swimming_pool === true
       );
     }
     return { ...state, filtered_products: tempProducts };
@@ -99,11 +91,10 @@ const filter_reducer = (state, action) => {
       filters: {
         ...state.filters,
         text: "",
-        company: "all",
+        location: "all",
         category: "all",
         color: "all",
-        price: state.filters.max_price,
-        shipping: false,
+        swimming_pool: false,
       },
     };
   }

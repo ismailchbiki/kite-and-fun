@@ -2,8 +2,7 @@
   {
     "id": "recQ0fMd8T0Vk211E",
     "stock": 10,
-    "price": 3099,
-    "shipping": true,
+    "swimming_pool": true,
     "colors": ["#000"],
     "category": "living room",
     "images": [
@@ -142,13 +141,12 @@
     "stars": 2.2,
     "name": "modern poster",
     "description": "Cloud bread VHS hell of banjo bicycle rights jianbing umami mumblecore etsy 8-bit pok pok +1 wolf. Vexillologist yr dreamcatcher waistcoat, authentic chillwave trust fund. Viral typewriter fingerstache pinterest pork belly narwhal. Schlitz venmo everyday carry kitsch pitchfork chillwave iPhone taiyaki trust fund hashtag kinfolk microdosing gochujang live-edge",
-    "company": "liddy"
+    "location": "liddy"
   },
   {
     "id": "recd1jIVIEChmiwhe",
     "stock": 3,
-    "price": 12599,
-    "shipping": true,
+    "swimming_pool": true,
     "colors": ["#000", "#00ff00", "#0000ff"],
     "category": "bedroom",
     "images": [
@@ -287,12 +285,11 @@
     "stars": 4.6,
     "name": "armchair",
     "description": "Cloud bread VHS hell of banjo bicycle rights jianbing umami mumblecore etsy 8-bit pok pok +1 wolf. Vexillologist yr dreamcatcher waistcoat, authentic chillwave trust fund. Viral typewriter fingerstache pinterest pork belly narwhal. Schlitz venmo everyday carry kitsch pitchfork chillwave iPhone taiyaki trust fund hashtag kinfolk microdosing gochujang live-edge",
-    "company": "marcos"
+    "location": "marcos"
   },
   {
     "id": "recroK1VD8qVdMP5H",
     "stock": 7,
-    "price": 15999,
     "colors": ["#ffb900"],
     "category": "office",
     "images": [
@@ -431,12 +428,11 @@
     "stars": 3.6,
     "name": "suede armchair",
     "description": "Cloud bread VHS hell of banjo bicycle rights jianbing umami mumblecore etsy 8-bit pok pok +1 wolf. Vexillologist yr dreamcatcher waistcoat, authentic chillwave trust fund. Viral typewriter fingerstache pinterest pork belly narwhal. Schlitz venmo everyday carry kitsch pitchfork chillwave iPhone taiyaki trust fund hashtag kinfolk microdosing gochujang live-edge",
-    "company": "caressa"
+    "location": "caressa"
   },
   {
     "id": "recoW8ecgjtKx2Sj2",
     "stock": 300,
-    "price": 20099,
     "colors": ["#ff0000", "#ffb900", "#00ff00"],
     "category": "bedroom",
     "images": [
@@ -575,13 +571,12 @@
     "stars": 4.8,
     "name": "leather chair",
     "description": "Cloud bread VHS hell of banjo bicycle rights jianbing umami mumblecore etsy 8-bit pok pok +1 wolf. Vexillologist yr dreamcatcher waistcoat, authentic chillwave trust fund. Viral typewriter fingerstache pinterest pork belly narwhal. Schlitz venmo everyday carry kitsch pitchfork chillwave iPhone taiyaki trust fund hashtag kinfolk microdosing gochujang live-edge",
-    "company": "caressa"
+    "location": "caressa"
   },
   {
     "id": "rec1Ntk7siEEW9ha1",
     "stock": 0,
-    "price": 23999,
-    "shipping": true,
+    "swimming_pool": true,
     "colors": ["#0000ff", "#000"],
     "category": "bedroom",
     "images": [
@@ -720,13 +715,12 @@
     "stars": 5,
     "name": "emperor bed",
     "description": "Cloud bread VHS hell of banjo bicycle rights jianbing umami mumblecore etsy 8-bit pok pok +1 wolf. Vexillologist yr dreamcatcher waistcoat, authentic chillwave trust fund. Viral typewriter fingerstache pinterest pork belly narwhal. Schlitz venmo everyday carry kitsch pitchfork chillwave iPhone taiyaki trust fund hashtag kinfolk microdosing gochujang live-edge",
-    "company": "ikea"
+    "location": "ikea"
   },
   {
     "id": "recZkNf2kwmdBcqd0",
     "stock": 3,
-    "price": 25999,
-    "shipping": true,
+    "swimming_pool": true,
     "colors": ["#ff0000", "#00ff00", "#0000ff"],
     "category": "office",
     "images": [
@@ -865,6 +859,6 @@
     "stars": 4.9,
     "name": "accent chair",
     "description": "Cloud bread VHS hell of banjo bicycle rights jianbing umami mumblecore etsy 8-bit pok pok +1 wolf. Vexillologist yr dreamcatcher waistcoat, authentic chillwave trust fund. Viral typewriter fingerstache pinterest pork belly narwhal. Schlitz venmo everyday carry kitsch pitchfork chillwave iPhone taiyaki trust fund hashtag kinfolk microdosing gochujang live-edge",
-    "company": "marcos"
+    "location": "marcos"
   }
 ]

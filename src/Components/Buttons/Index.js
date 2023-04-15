@@ -1,5 +1,3 @@
-import React from "react";
-
 // Import Conponents
 import ScrollToTop from "./ScrollToTop/ScrollToTop";
 import DarkTheme from "./DarkTheme/DarkTheme";

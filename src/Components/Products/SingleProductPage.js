@@ -1,7 +1,6 @@
 import { useEffect } from "react";
 import { useParams, useNavigate, Link } from "react-router-dom";
 import { useProductsContext } from "./context/products_context";
-import { formatPrice } from "./utils/helpers";
 import { Loading, ProductImages, Stars } from "./components";
 import "./Products-shared.scss";
 import "./SingleProductPage.scss";
@@ -36,13 +35,12 @@ const SingleProductPage = () => {
 
   const {
     name,
-    price,
     description,
     stock,
     stars,
     reviews,
     id: sku,
-    company,
+    location,
     images,
   } = product;
 
@@ -56,7 +54,6 @@ const SingleProductPage = () => {
         <section className="content">
           <h2>{name}</h2>
           <Stars stars={stars} reviews={reviews} />
-          <h5 className="price">{formatPrice(price)}</h5>
           <p className="desc">{description}</p>
           <p className="info">
             <span>Available : </span>
@@ -68,7 +65,7 @@ const SingleProductPage = () => {
           </p>
           <p className="info">
             <span>Brand : </span>
-            {company}
+            {location}
           </p>
           <hr />
         </section>
