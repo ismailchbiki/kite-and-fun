@@ -1,7 +1,7 @@
 import { useState } from "react";
-import "./ProductImages.scss";
+import "./WatersportImages.scss";
 
-const ProductImages = ({ images = [{ url: "" }] }) => {
+const WatersportImages = ({ images = [{ url: "" }] }) => {
   const [main, setMain] = useState(images[0]);
   return (
     <div className="image-gallery">
@@ -23,4 +23,4 @@ const ProductImages = ({ images = [{ url: "" }] }) => {
   );
 };
 
-export default ProductImages;
+export default WatersportImages;

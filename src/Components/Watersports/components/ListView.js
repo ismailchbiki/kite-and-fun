@@ -1,21 +1,21 @@
 import { Link } from "react-router-dom";
 import "./ListView.scss";
 
-const ListView = ({ products }) => {
+const ListView = ({ watersports }) => {
   return (
     <section className="listView">
-      {products.map((product) => {
-        const { id, image, name, description, location } = product;
+      {watersports.map((watersport) => {
+        const { id, image, name, description, type } = watersport;
         return (
           <article key={id}>
             <img src={image} alt={name} />
             <div>
               <h4>
-                {name} ({location})
+                {name} ({type})
               </h4>
 
               <p>{description.substring(0, 150)}...</p>
-              <Link to={`/products/${id}`} className="btn">
+              <Link to={`/watersports/${id}`} className="btn">
                 Details
               </Link>
             </div>

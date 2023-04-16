@@ -1,7 +1,7 @@
 @import "./../../Sass/variables.scss";
 @import "./../../Sass/mixins.scss";
 
-.product-center {
+.watersport-center {
   display: grid;
   gap: 4rem;
   margin-top: 2rem;
@@ -21,7 +21,7 @@
 }
 
 @media (min-width: 992px) {
-  .product-center {
+  .watersport-center {
     grid-template-columns: 1fr 1fr;
     align-items: center;
   }

@@ -2,13 +2,13 @@ import React from "react";
 import { FaSearch } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import "./Product.scss";
+import "./Watersport.scss";
 
-const Product = ({ image, name, id, location }) => {
+const Watersport = ({ image, name, id, type }) => {
   return (
     <div>
-      <motion.div whileHover={{ scale: 1.1 }} className="product-container">
-        <Link to={`/products/${id}`}>
+      <motion.div whileHover={{ scale: 1.1 }} className="watersport-container">
+        <Link to={`/watersports/${id}`}>
           <img src={image} alt={name} />
           <div className="link">
             <FaSearch />
@@ -17,10 +17,10 @@ const Product = ({ image, name, id, location }) => {
       </motion.div>
       <footer>
         <span>{name}</span>
-        <p>{location}</p>
+        <p>{type}</p>
       </footer>
     </div>
   );
 };
 
-export default Product;
+export default Watersport;

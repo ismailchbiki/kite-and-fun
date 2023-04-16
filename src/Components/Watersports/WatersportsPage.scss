@@ -6,13 +6,13 @@
   margin: 0 auto;
 }
 
-.products {
+.watersports {
   display: grid;
   gap: 3rem 1.5rem;
 }
 
 @media (min-width: 768px) {
-  .products {
+  .watersports {
     grid-template-columns: 200px 1fr;
   }
 }

@@ -1,22 +1,22 @@
 import { useEffect } from "react";
 import { useParams, useNavigate, Link } from "react-router-dom";
-import { useProductsContext } from "./context/products_context";
-import { Loading, ProductImages, Stars } from "./components";
-import "./Products-shared.scss";
-import "./SingleProductPage.scss";
+import { useWatersportsContext } from "./context/watersports_context";
+import { Loading, WatersportImages, Stars } from "./components";
+import "./Watersports-shared.scss";
+import "./SingleWatersportPage.scss";
 
-const SingleProductPage = () => {
+const SingleWatersportPage = () => {
   const { id } = useParams();
   const navigate = useNavigate();
   const {
-    single_product_loading: loading,
-    single_product_error: error,
-    single_product: product,
-    fetchSingleProduct,
-  } = useProductsContext();
+    single_watersport_loading: loading,
+    single_watersport_error: error,
+    single_watersport: watersport,
+    fetchSingleWatersport,
+  } = useWatersportsContext();
 
   useEffect(() => {
-    fetchSingleProduct(id);
+    fetchSingleWatersport(id);
     // eslint-disable-next-line
   }, [id]);
 
@@ -42,15 +42,15 @@ const SingleProductPage = () => {
     id: sku,
     location,
     images,
-  } = product;
+  } = watersport;
 
   return (
     <div className="section section-center page">
-      <Link to="/products" className="btn">
-        back to products
+      <Link to="/watersports" className="btn">
+        Go Back
       </Link>
-      <div className="product-center">
-        <ProductImages images={images} />
+      <div className="watersport-center">
+        <WatersportImages images={images} />
         <section className="content">
           <h2>{name}</h2>
           <Stars stars={stars} reviews={reviews} />
@@ -74,4 +74,4 @@ const SingleProductPage = () => {
   );
 };
 
-export default SingleProductPage;
+export default SingleWatersportPage;

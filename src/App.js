@@ -15,8 +15,8 @@ import NotFound from "./Components/NotFound/Index";
 import "./App.scss";
 import About from "./Components/About/Index";
 import Destination from "./Components/Destinations/Body/Destination-Item/Destination";
-import Products from "./Components/Products/ProductsPage";
-import SingleProduct from "./Components/Products/SingleProductPage";
+import Watersports from "./Components/Watersports/WatersportsPage";
+import SingleWatersport from "./Components/Watersports/SingleWatersportPage";
 
 function App() {
   return (
@@ -27,8 +27,8 @@ function App() {
 
         <Routes>
           <Route exact path="/" element={<Index />} />
-          <Route path={"/products"} element={<Products />} />
-          <Route path={"/products/:id"} element={<SingleProduct />} />
+          <Route path={"/watersports"} element={<Watersports />} />
+          <Route path={"/watersports/:id"} element={<SingleWatersport />} />
           <Route path={"/contact"} element={<Contact />} />
           <Route path={"/about"} element={<About />} />
           <Route path={"destination/:id"} element={<Destination />} />

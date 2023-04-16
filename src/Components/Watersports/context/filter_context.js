@@ -1,44 +1,46 @@
 import React, { useEffect, useContext, useReducer } from "react";
 import reducer from "../reducers/filter_reducer";
 import {
-  LOAD_PRODUCTS,
+  LOAD_WATERSPORTS,
   SET_GRIDVIEW,
   SET_LISTVIEW,
   UPDATE_SORT,
-  SORT_PRODUCTS,
+  SORT_WATERSPORTS,
   UPDATE_FILTERS,
-  FILTER_PRODUCTS,
-  CLEAR_FILTERS,
+  FILTER_WATERSPORTS,
+  RESET_FILTERS,
 } from "../actions";
-import { useProductsContext } from "./products_context";
+import { useWatersportsContext } from "./watersports_context";
 
 const initialState = {
-  filtered_products: [],
-  all_products: [],
+  filtered_watersports: [],
+  all_watersports: [],
   grid_view: true,
   filters: {
     text: "",
+    type: "all",
     location: "all",
-    category: "all",
     color: "all",
     swimming_pool: false,
   },
+  // For default sort order. Comment it out to use order of json data
+  sort: "name-a",
 };
 
 const FilterContext = React.createContext();
 
 export const FilterProvider = ({ children }) => {
-  const { products } = useProductsContext();
+  const { watersports } = useWatersportsContext();
   const [state, dispatch] = useReducer(reducer, initialState);
 
   useEffect(() => {
-    dispatch({ type: LOAD_PRODUCTS, payload: products });
-  }, [products]);
+    dispatch({ type: LOAD_WATERSPORTS, payload: watersports });
+  }, [watersports]);
 
   useEffect(() => {
-    dispatch({ type: FILTER_PRODUCTS });
-    dispatch({ type: SORT_PRODUCTS });
-  }, [products, state.sort, state.filters]);
+    dispatch({ type: FILTER_WATERSPORTS });
+    dispatch({ type: SORT_WATERSPORTS });
+  }, [watersports, state.sort, state.filters]);
 
   const setGridView = () => {
     dispatch({ type: SET_GRIDVIEW });
@@ -49,7 +51,6 @@ export const FilterProvider = ({ children }) => {
   };
 
   const updateSort = (e) => {
-    //const name = e.target.name
     const value = e.target.value;
     dispatch({ type: UPDATE_SORT, payload: value });
   };
@@ -57,7 +58,7 @@ export const FilterProvider = ({ children }) => {
   const updateFilters = (e) => {
     let name = e.target.name;
     let value = e.target.value;
-    if (name === "category") {
+    if (name === "location") {
       value = e.target.textContent;
     }
     if (name === "color") {
@@ -68,8 +69,8 @@ export const FilterProvider = ({ children }) => {
     }
     dispatch({ type: UPDATE_FILTERS, payload: { name, value } });
   };
-  const clearFilters = () => {
-    dispatch({ type: CLEAR_FILTERS });
+  const resetFilters = () => {
+    dispatch({ type: RESET_FILTERS });
   };
   return (
     <FilterContext.Provider
@@ -79,7 +80,7 @@ export const FilterProvider = ({ children }) => {
         setListView,
         updateSort,
         updateFilters,
-        clearFilters,
+        resetFilters,
       }}
     >
       {children}

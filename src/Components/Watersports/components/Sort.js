@@ -1,11 +1,10 @@
-import React from "react";
 import { useFilterContext } from "../context/filter_context";
 import { BsFillGridFill, BsList } from "react-icons/bs";
 import "./Sort.scss";
 
 const Sort = () => {
   const {
-    filtered_products: products,
+    filtered_watersports: watersports,
     grid_view,
     setGridView,
     setListView,
@@ -30,7 +29,7 @@ const Sort = () => {
           <BsList />
         </button>
       </div>
-      <p>{products.length} products found</p>
+      <p>{watersports.length} Watersports found</p>
       <hr />
       <form>
         <label htmlFor="sort">sort by</label>

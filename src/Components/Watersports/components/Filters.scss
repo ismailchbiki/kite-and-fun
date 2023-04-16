@@ -36,35 +36,13 @@
   .active {
     border-color: $light-grey-2;
   }
-  .location {
+  .type {
     background: $white-2;
     border-radius: $radius;
     border-color: transparent;
     padding: 0.4rem 0;
     outline-color: $second-color;
     width: 160px;
-  }
-  .colors {
-    display: flex;
-    align-items: center;
-  }
-  .color-btn {
-    display: inline-block;
-    width: 1rem;
-    height: 1rem;
-    border-radius: 50%;
-    background: #222;
-    margin-right: 0.5rem;
-    border: none;
-    cursor: pointer;
-    opacity: 0.5;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    svg {
-      font-size: 0.5rem;
-      color: $white;
-    }
   }
   .all-btn {
     display: flex;
@@ -88,7 +66,7 @@
     font-size: 1rem;
     color: $third-color;
   }
-  .clear-btn {
+  .reset-btn {
     background: $main-color;
     color: $white-color;
     padding: 0.4rem 0;

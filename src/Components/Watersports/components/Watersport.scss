@@ -1,7 +1,7 @@
 @import "../../../Sass/variables.scss";
 @import "../../../Sass/mixins.scss";
 
-.product-container {
+.watersport-container {
   position: relative;
   background: $dark-grey;
   border-radius: $radius;
@@ -33,10 +33,10 @@ img {
     color: $white;
   }
 }
-.product-container:hover img {
+.watersport-container:hover img {
   opacity: 0.5;
 }
-.product-container:hover .link {
+.watersport-container:hover .link {
   opacity: 1;
 }
 footer {
@@ -46,6 +46,7 @@ footer {
 }
 footer span {
   font-size: 1.5rem;
+  color: $third-color;
 }
 footer p {
   font-weight: 400;
