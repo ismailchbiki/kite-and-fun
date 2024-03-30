@@ -1,6 +1,6 @@
 {
-  "homepage": "https://ismailchbiki.github.io/kite-and-fun",
-  "name": "website",
+  "homepage": "https://ismailchbiki.github.io",
+  "name": "kite-and-fun",
   "version": "1.0.0",
   "private": false,
   "dependencies": {
