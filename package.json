@@ -1,4 +1,5 @@
 {
+  "homepage": "https://ismailchbiki.github.io/kite-and-fun",
   "name": "kite-and-fun",
   "version": "1.0.0",
   "private": false,
@@ -44,6 +45,6 @@
   },
   "devDependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
-    "gh-pages": "^3.2.0"
+    "gh-pages": "^3.2.3"
   }
 }
