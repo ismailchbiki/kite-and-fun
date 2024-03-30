@@ -1,0 +1,50 @@
+{
+  "header": {
+    "title": "Top Destinations",
+    "body": "From the rugged coastlines of Taghazout to the picture-perfect waves of Imsouane and all the way to Dakhla, Morocco offers some of the world's top surf & kitesurf destinations for water enthusiasts of all levels."
+  },
+  "content": [
+    {
+      "id": 1,
+      "title": "Dakhla",
+      "image": "https://images.unsplash.com/photo-1541845157-a6d2d100c931?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1350&amp;q=80",
+      "body": "You don't get to be mom if you can't fix everything just right.",
+      "alt": "image of Dakhla"
+    },
+    {
+      "id": 2,
+      "title": "Essaouira",
+      "image": "https://images.unsplash.com/photo-1588282322673-c31965a75c3e?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1351&amp;q=80",
+      "body": "You don't get to be mom if you can't fix everything just right.",
+      "alt": "image of Dakhla"
+    },
+    {
+      "id": 3,
+      "title": "Taghazout",
+      "image": "https://images.unsplash.com/photo-1588282322673-c31965a75c3e?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1351&amp;q=80",
+      "body": "You don't get to be mom if you can't fix everything just right.",
+      "alt": "image of Dakhla"
+    },
+    {
+      "id": 4,
+      "title": "Moulay Bouzerktoune",
+      "image": "https://images.unsplash.com/photo-1541845157-a6d2d100c931?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1350&amp;q=80",
+      "body": "You don't get to be mom if you can't fix everything just right.",
+      "alt": "image of Dakhla"
+    },
+    {
+      "id": 5,
+      "title": "Sidi Kauki",
+      "image": "https://images.unsplash.com/photo-1588492885706-b8917f06df77?ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=1951&amp;q=80",
+      "body": "You don't get to be mom if you can't fix everything just right.",
+      "alt": "image of Dakhla"
+    },
+    {
+      "id": 6,
+      "title": "Safi",
+      "image": "https://images.unsplash.com/photo-1586521995568-39abaa0c2311?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1350&amp;q=80",
+      "body": "You don't get to be mom if you can't fix everything just right.",
+      "alt": "image of Dakhla"
+    }
+  ]
+}
