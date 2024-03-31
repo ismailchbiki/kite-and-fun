@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/kite-and-fun/static/css/main.39596295.css",
-    "main.js": "/kite-and-fun/static/js/main.37b5a5bd.js",
+    "main.js": "/kite-and-fun/static/js/main.b023ece8.js",
     "static/media/banner-1920-1000.jpg": "/kite-and-fun/static/media/banner-1920-1000.641ca2020115f00a487a.jpg",
     "index.html": "/kite-and-fun/index.html",
     "main.39596295.css.map": "/kite-and-fun/static/css/main.39596295.css.map",
-    "main.37b5a5bd.js.map": "/kite-and-fun/static/js/main.37b5a5bd.js.map"
+    "main.b023ece8.js.map": "/kite-and-fun/static/js/main.b023ece8.js.map"
   },
   "entrypoints": [
     "static/css/main.39596295.css",
-    "static/js/main.37b5a5bd.js"
+    "static/js/main.b023ece8.js"
   ]
 }
