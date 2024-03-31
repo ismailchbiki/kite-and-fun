@@ -26,12 +26,12 @@ function App() {
         <Buttons />
 
         <Routes>
-          <Route exact path="/" element={<Index />} />
-          <Route path={"/watersports"} element={<Watersports />} />
-          <Route path={"/watersports/:id"} element={<SingleWatersport />} />
-          <Route path={"/contact"} element={<Contact />} />
-          <Route path={"/about"} element={<About />} />
-          <Route path={"destination/:id"} element={<Destination />} />
+          <Route exact path={`${process.env.PUBLIC_URL}/`} element={<Index />} />
+          <Route path={`${process.env.PUBLIC_URL}/watersports`} element={<Watersports />} />
+          <Route path={`${process.env.PUBLIC_URL}/watersports/:id`} element={<SingleWatersport />} />
+          <Route path={`${process.env.PUBLIC_URL}/contact`} element={<Contact />} />
+          <Route path={`${process.env.PUBLIC_URL}/about`} element={<About />} />
+          <Route path={`${process.env.PUBLIC_URL}/destination/:id`} element={<Destination />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </Router>
